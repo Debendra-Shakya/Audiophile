@@ -15,7 +15,7 @@ margin-right: auto;
 margin-left:auto;
 padding: 0 50px;
 
-@media screen and (max-width:960px){
+@media screen and (max-width:991px){
     padding: 0 30px;
 }
 `

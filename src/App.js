@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
     <GlobalStyle />
-    <Navbar />
+    
     
     <Home />
     </>
