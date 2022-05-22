@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Button, MainHeading } from '../../globalStyles'
 
 export const ZX7Section=styled.section`
-height: 75vh;
+height: 55vh;
 width:100%;
 background-position: center;
 background-size: cover;
