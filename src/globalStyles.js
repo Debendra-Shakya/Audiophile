@@ -43,6 +43,8 @@ export const TextWrapper=styled.span``
 export const Section=styled.section``
 export const Row=styled.div``
 export const Coloumn=styled.div``
+
+
 export const Button=styled.button`
 border-radius: 4px;
 background: none;

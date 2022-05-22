@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Button} from '../../globalStyles'
-import { Image, Info, Title,CategoriesButton,CateItemContainer } from './CategoriesStyles'
+import { Image, Info, Title,CategoriesButton,CateItemContainer, Wrapper } from './CategoriesStyles'
 
 
 
@@ -9,6 +9,8 @@ const CategoriesItem = ({item}) => {
     <CateItemContainer>
 
         <Image src={item.img}/>
+        {/* <Wrapper> */}
+
        <Info>
         <Title>{item.title}</Title>
         <CategoriesButton>SHOP  
@@ -22,6 +24,7 @@ const CategoriesItem = ({item}) => {
 
        </Info>
        
+        {/* </Wrapper> */}
         
     </CateItemContainer>
   )

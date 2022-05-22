@@ -9,9 +9,11 @@ const Categories = () => {
   return (
     <CategoriesContainer>
       {categories.map((item) => (
-        <Wrapper>
-          <CategoriesItem item={item} />
-        </Wrapper>
+   <Wrapper>
+
+     <CategoriesItem item={item} />
+   </Wrapper>
+        
       ))}
     </CategoriesContainer>
   );
