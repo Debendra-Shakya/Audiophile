@@ -57,4 +57,5 @@ background-color:  black;
     color:black;
     background-color: white;
 }
+${Button}
 `;
