@@ -24,7 +24,7 @@ padding-left: 150px;
 export const Zx9Heading=styled(MainHeading)`
 text-align: left;
 z-index: 2;
-margin-left:650px;
+padding-left:650px;
 margin-top: -500px;
 color:#fff;
 ${MainHeading}
