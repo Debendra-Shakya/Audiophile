@@ -1,28 +1,37 @@
 import React from "react";
-import { Container, MainHeading } from "../../globalStyles";
-import {  HeadphoneButton } from "../Headphones/HeadphoneStyles";
-import { Zx9Section, Zx9Image, Zx9Heading, Zx9Text, Zx9Button,ButtonWrapper } from "./Zx9Styles";
+import { Container, Section } from "../../globalStyles";
+import {
+  ContentColumn,
+  ContentRow,
+  Zx9Button,
+  Zx9Heading,
+  Zx9Image,
+  Zx9Text,
+  Zx9Wrapper,
+} from "./Zx9Styles";
 
-const Zx9 = () => {
+const ZX9t = () => {
   return (
-    <>
-      <Zx9Section>
+    <Section smPadding="50px 10px" inverse="about" postition="relative">
+      <Zx9Wrapper>
+      <Container>
         <Zx9Image src="./assests/SPEAKER.png" />
-        <Container>
+
+       
           <Zx9Heading>
             ZX9
             <br />
             SPEAKER
           </Zx9Heading>
-          <Zx9Text>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</Zx9Text>
-          <ButtonWrapper>
-          {/* <Button>get started</Button> */}
+          <Zx9Text>
+            Upgrade to premium speakers that are phenomenally built to deliver
+            truly remarkable sound.
+          </Zx9Text>
           <Zx9Button>SEE PRODUCT</Zx9Button>
-        </ButtonWrapper>
         </Container>
-      </Zx9Section>
-    </>
+      </Zx9Wrapper>
+    </Section>
   );
 };
 
-export default Zx9;
+export default ZX9t;

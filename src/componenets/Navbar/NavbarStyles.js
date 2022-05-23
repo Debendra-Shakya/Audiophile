@@ -16,6 +16,8 @@ export const Nav = styled.nav`
   width: 100%;
 
   transition: background-color 0.3 ease-in;
+
+
 `;
 export const NavbarContainer = styled(Container)`
   display: flex;
@@ -23,6 +25,7 @@ export const NavbarContainer = styled(Container)`
   overflow: hidden;
   height: 80px;
   ${Container}
+
 `;
 export const NavLogo = styled.nav`
   color: #fff;
@@ -33,6 +36,7 @@ export const NavLogo = styled.nav`
   display: flex;
   align-items: center;
   z-index: 50;
+
 `;
 // export const NavIcon = styled.nav``
 export const MobileIcon = styled.div`

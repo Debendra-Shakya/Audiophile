@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container} from "../../globalStyles";
+import { Button, Container, Section,MainHeading} from "../../globalStyles";
 import {
   HeadphoneImage,
   HeadphoneSection,
@@ -12,9 +12,10 @@ import {
 
 const Headphone = () => {
   return (
-    <HeadphoneSection>
-      <HeadphoneImage src="./assests/image-hero.jpg" />
+    <HeadphoneSection >
+          <HeadphoneImage src="./assests/image-hero.jpg" />
       <Container>
+ 
       <hr style={{
           background: "white",
           color: 'white',

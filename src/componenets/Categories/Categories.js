@@ -1,21 +1,40 @@
 import React from "react";
 
-import { categories } from "../../data/CategoriesData";
+import { categoriesData } from "../../data/CategoriesData";
+import { Container, Section } from "../../globalStyles";
 
-import CategoriesItem from "./CategoriesItem";
-import { CategoriesContainer, Wrapper } from "./CategoriesStyles";
+import { FeatureColumn,Image, Info, Title,CategoriesButton,CateItemContainer, Wrapper } from './CategoriesStyles'
+
 
 const Categories = () => {
   return (
-    <CategoriesContainer>
-      {categories.map((item) => (
-   <Wrapper>
+  <Section smPadding="50px 10px" inverse="about" postition="relative">
+    <Container>
+<Wrapper>
+{categoriesData.map((el,index)=>(
+  <FeatureColumn key={index}>
+<Image src={el.img}/>
 
-     <CategoriesItem item={item} />
-   </Wrapper>
-        
-      ))}
-    </CategoriesContainer>
+
+<Title>{el.title}</Title>
+        <CategoriesButton>SHOP  
+           <span style={{color:"red"}}>
+           {'  >'} 
+           </span>
+          
+            
+            
+            </CategoriesButton>
+
+  </FeatureColumn>
+))}
+
+</Wrapper>
+
+    </Container>
+
+
+  </Section>
   );
 };
 
