@@ -15,8 +15,8 @@ const Home = () => {
       <Headphone/>
       <Categories />
       <Zx9 />
-      {/* <Zx7 />
-      <Yx1 /> */}
+      <Zx7 />
+      <Yx1 />
     </>
   );
 };

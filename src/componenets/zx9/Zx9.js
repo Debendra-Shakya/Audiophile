@@ -1,8 +1,15 @@
 import React from "react";
 import { Container, Section } from "../../globalStyles";
 import {
+  ContentButton,
   ContentColumn,
   ContentRow,
+  Heading,
+  Img,
+  ImgWrapper,
+  Subtitle,
+  TextWrapper,
+  TopLine,
   Zx9Button,
   Zx9Heading,
   Zx9Image,
@@ -12,25 +19,39 @@ import {
 
 const ZX9t = () => {
   return (
-    <Section smPadding="50px 10px" inverse="about" postition="relative">
+    <Section inverse="a">
+    <Container>
       <Zx9Wrapper>
-      <Container>
-        <Zx9Image src="./assests/SPEAKER.png" />
-
+      <ContentRow>
+      <ContentColumn>
+          <ImgWrapper>
+            <Img src="./assests/SPEAKER.png"
+              whileHover={{ rotate: 2, scale: 1.02 }}
+              transition={{ duration: 0.5 }}
+            />
+          </ImgWrapper>
+        </ContentColumn>
+        <ContentColumn>
+          <TextWrapper>
+            {/* <TopLine>
+         This is top line
+            </TopLine> */}
+            <Heading>
+            ZX9 SPEAKER
+            </Heading>
+            <Subtitle>
+            Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
+            </Subtitle>
+            <ContentButton>
+            SEE PRODUCT
+            </ContentButton>
+          </TextWrapper>
+        </ContentColumn>
        
-          <Zx9Heading>
-            ZX9
-            <br />
-            SPEAKER
-          </Zx9Heading>
-          <Zx9Text>
-            Upgrade to premium speakers that are phenomenally built to deliver
-            truly remarkable sound.
-          </Zx9Text>
-          <Zx9Button>SEE PRODUCT</Zx9Button>
-        </Container>
+      </ContentRow>
       </Zx9Wrapper>
-    </Section>
+    </Container>
+  </Section>
   );
 };
 
