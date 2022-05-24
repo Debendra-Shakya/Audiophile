@@ -6,6 +6,7 @@ import Navbar from "../componenets/Navbar/Navbar";
 import Yx1 from "../componenets/yx1/Yx1";
 import Zx7 from "../componenets/zx7/Zx7";
 import Zx9 from "../componenets/zx9/Zx9";
+import Footer from "../componenets/Footer/Footer";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Zx7 />
       <Yx1 />
       <Description/>
+      <Footer/>
     </>
   );
 };

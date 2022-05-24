@@ -17,6 +17,7 @@ import {
 import { data } from "../../data/NavbarData";
 import { useState } from "react";
 import styledComponents from "styled-components";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [show, setShow] = useState(false);
 
@@ -52,7 +53,7 @@ const Navbar = () => {
         
      
         <NavbarContainer>
-          <NavLogo to="/">Audiophile</NavLogo>
+          <NavLogo to="/">audiophile</NavLogo>
 
           <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
 
@@ -68,8 +69,10 @@ const Navbar = () => {
             ))}
   
           </NavMenu>
+       
 
         </NavbarContainer>
+    
        
       </Nav>
     
@@ -77,5 +80,6 @@ const Navbar = () => {
     </IconContext.Provider>
   );
 };
+
 
 export default Navbar;

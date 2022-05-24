@@ -8,6 +8,7 @@ import {
   HeadphoneButton,
   HeadphoneMainHeading,
   HeadphoneTextOne,
+  Wrapper,
 } from "./HeadphoneStyles";
 
 const Headphone = () => {
@@ -22,13 +23,18 @@ const Headphone = () => {
           borderColor: 'white',
           height: '1px',
           width: '100%',
-          marginBottom:'150px',
-          marginTop:'-150px',
+          
+          marginBottom:'60px',
+          marginTop:'-130px',
           opacity: "0.3",
   
         
       }}
           />
+
+
+
+   
         <HeadphoneText>NEW PRODUCT</HeadphoneText>
         <HeadphoneMainHeading>XX99 MARK II HEADPHONES</HeadphoneMainHeading>
         <HeadphoneTextOne>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</HeadphoneTextOne>
@@ -36,6 +42,7 @@ const Headphone = () => {
           {/* <Button>get started</Button> */}
           <HeadphoneButton>SEE PRODUCT</HeadphoneButton>
         </ButtonWrapper>
+      
       </Container>
     </HeadphoneSection>
   );
