@@ -16,7 +16,7 @@ const Home = () => {
       <Categories />
       <Zx9 />
       <Zx7 />
-      <Yx1 />
+      {/* <Yx1 /> */}
     </>
   );
 };
