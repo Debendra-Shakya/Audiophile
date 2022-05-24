@@ -19,16 +19,13 @@ import {
 
 const ZX9t = () => {
   return (
-    <Section inverse="a">
+    <Section inverse="a" >
     <Container>
       <Zx9Wrapper>
       <ContentRow>
       <ContentColumn>
           <ImgWrapper>
-            <Img src="./assests/SPEAKER.png"
-              whileHover={{ rotate: 2, scale: 1.02 }}
-              transition={{ duration: 0.5 }}
-            />
+            <Img src="./assests/SPEAKER.png"/>
           </ImgWrapper>
         </ContentColumn>
         <ContentColumn>

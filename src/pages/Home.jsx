@@ -1,5 +1,6 @@
 import React from "react";
 import Categories from "../componenets/Categories/Categories";
+import Description from "../componenets/Description/Description";
 import Headphone from "../componenets/Headphones/Headphone";
 import Navbar from "../componenets/Navbar/Navbar";
 import Yx1 from "../componenets/yx1/Yx1";
@@ -16,7 +17,8 @@ const Home = () => {
       <Categories />
       <Zx9 />
       <Zx7 />
-      {/* <Yx1 /> */}
+      <Yx1 />
+      <Description/>
     </>
   );
 };
