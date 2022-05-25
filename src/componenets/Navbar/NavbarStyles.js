@@ -92,6 +92,7 @@ color: #fff;
 	padding: 0.5rem 1rem;
 	height: 100%;
 
+
 	&:hover {
 		color: #c8c9d8;
 		transition: all 0.3s ease;
