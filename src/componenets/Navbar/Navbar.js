@@ -68,7 +68,7 @@ const Navbar = () => {
                   {el.icon}
                 
                 </NavLinks>
-                <NavCart>{el.icon}</NavCart>
+                {/* <NavCart>{el.icon}</NavCart> */}
       
               </NavItem>
               
