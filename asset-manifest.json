@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Audiophile/static/css/main.6a5789ad.css",
+    "main.js": "/Audiophile/static/js/main.edeaebda.js",
+    "index.html": "/Audiophile/index.html",
+    "main.6a5789ad.css.map": "/Audiophile/static/css/main.6a5789ad.css.map",
+    "main.edeaebda.js.map": "/Audiophile/static/js/main.edeaebda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a5789ad.css",
+    "static/js/main.edeaebda.js"
+  ]
+}
