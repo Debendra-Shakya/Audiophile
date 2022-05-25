@@ -14,7 +14,7 @@ export const FooterRow=styled.div`
 `
 export const FooterColumn=styled.div`
 margin-bottom: 10px;
-  margin-top:100px;
+  margin-top:60px;
 	padding-right: 15px;
 	padding-left: 75px;
 	flex: 1;
@@ -34,7 +34,10 @@ margin-right:auto;
 
 `
 
-export const FooterLogo=styled.h2``
+export const FooterLogo=styled.h2`
+color:#fff;
+font-weight: 700;
+`
 
 export const FooterSocialIcon = styled.a`
 	color: #fff;
@@ -118,3 +121,12 @@ export const FooterMenu = styled.ul`
 		margin-left: auto;
 	} */
 `;
+
+export const FooterDescription=styled.p`
+color:#fff;
+opacity: 0.6;
+font-size: 17px;
+`
+export const FooterCopyRight= styled.div`
+color:#fff;
+`

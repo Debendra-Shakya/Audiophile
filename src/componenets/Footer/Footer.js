@@ -4,6 +4,8 @@ import {data} from "../../data/NavbarData"
 import { Container, Section } from "../../globalStyles";
 import {
   FooterColumn,
+  FooterCopyRight,
+  FooterDescription,
   FooterItem,
   FooterLinks,
   FooterLogo,
@@ -16,7 +18,7 @@ import {
 
 const Footer = () => {
   return (
-    <Section>
+    <Section padding="0px 0 0 0">
       <Container>
         <FooterRow>
           <FooterColumn>
@@ -39,12 +41,12 @@ const Footer = () => {
         </FooterRow>
         <FooterRow>
           <FooterColumn>
-            <FooterLogo>
+            <FooterDescription>
               Audiophile is an all in one stop to fulfill your audio needs.
               We’re a small team of music lovers and sound specialists who are
               devoted to helping you get the most out of personal audio. COme
               and visit our demo facility -we’re open 7 days a week.{" "}
-            </FooterLogo>
+            </FooterDescription>
           </FooterColumn>
           <FooterColumn>
             <LogoWrapper>
@@ -64,7 +66,13 @@ const Footer = () => {
           </FooterColumn>
         </FooterRow>
         <FooterRow>
-          <FooterColumn>Copyright 2022. All right reserved @DBN</FooterColumn>
+          <FooterColumn>
+            <FooterCopyRight>
+
+            Copyright 2022. All right reserved @DBN
+            </FooterCopyRight>
+            
+            </FooterColumn>
         </FooterRow>
       </Container>
     </Section>

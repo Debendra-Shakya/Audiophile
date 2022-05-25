@@ -1,3 +1,6 @@
+import {FaCartPlus} from "react-icons/fa"
+
+const iconStyle = (Icon) => <Icon />;
 export const data = [
 	{
 		to: '/',
@@ -16,4 +19,8 @@ export const data = [
 		to: '/earphones',
 		text: 'EARPHONES',
 	},
+	{
+		to:'/cart',
+		icon: iconStyle(FaCartPlus),
+	}
 ];

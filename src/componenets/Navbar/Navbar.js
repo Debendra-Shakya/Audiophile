@@ -12,6 +12,7 @@ import {
   NavMenu,
   NavLinks,
   NavItem,
+  NavCart,
  
 } from "./NavbarStyles.js";
 import { data } from "../../data/NavbarData";
@@ -59,10 +60,15 @@ const Navbar = () => {
 
           <NavMenu show={show}>
 
-            {data.map((e1, index) => (
+            {data.map((el, index) => (
               <NavItem key={index}>
                 {/* <NavLinks onClick={()=>closeMobileMenu(e1.to,e1.id)}></NavLinks> */}
-                <NavLinks>{e1.text}</NavLinks>
+                <NavLinks>
+                  {el.text}
+                  {el.icon}
+                
+                </NavLinks>
+                <NavCart>{el.icon}</NavCart>
       
               </NavItem>
               
