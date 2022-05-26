@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Section } from "../../globalStyles";
+import { Container, Section } from "../../../globalStyles";
 import {
   ContentButton,
   ContentColumn,
@@ -25,7 +25,7 @@ const ZX9t = () => {
       <ContentRow>
       <ContentColumn>
           <ImgWrapper>
-            <Img src="./assests/SPEAKER.png"/>
+            <Img src="./assests/SPEAKER.png" alt="Zx9"/>
           </ImgWrapper>
         </ContentColumn>
         <ContentColumn>

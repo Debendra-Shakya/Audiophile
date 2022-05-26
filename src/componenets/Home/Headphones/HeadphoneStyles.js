@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, MainHeading } from "../../globalStyles";
+import { Button, MainHeading } from "../../../globalStyles";
 
 export const HeadphoneSection = styled.section`
 height: 75vh;

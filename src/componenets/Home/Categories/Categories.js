@@ -1,7 +1,7 @@
 import React from "react";
 
-import { categoriesData } from "../../data/CategoriesData";
-import { Container, Section } from "../../globalStyles";
+import { categoriesData } from "../../../data/CategoriesData";
+import { Container, Section } from "../../../globalStyles";
 
 import { FeatureColumn,Image, Info, Title,CategoriesButton,CateItemContainer, Wrapper } from './CategoriesStyles'
 
@@ -13,7 +13,7 @@ const Categories = () => {
 <Wrapper>
 {categoriesData.map((el,index)=>(
   <FeatureColumn key={index}>
-<Image src={el.img}/>
+<Image src={el.img} alt={el.title}/>
 
 
 <Title>{el.title}</Title>

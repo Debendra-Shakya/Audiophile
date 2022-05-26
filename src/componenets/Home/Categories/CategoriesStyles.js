@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Button,Container} from '../../globalStyles'
+import { Button,Container} from '../../../globalStyles'
 
 export const CateItemContainer=styled.div`
 flex:1;
@@ -49,7 +49,6 @@ display: grid;
    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
 
    @media screen and (max-width: 1100px) {
-		/* grid-template-columns: repeat(1, 1fr); */
 		grid-row-gap: 3rem;
 	}
 
@@ -58,15 +57,6 @@ display: grid;
 	}
 
 
-/* margin-top: 200px;
-height: 100%;
-width: 100%;
-padding-top: 180px;
-z-index: -1;
-/* background-color: #f1f1f1;
-background-color: red;
-
-box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */ 
 `
 
 export const CategoriesButton=styled(Button)`

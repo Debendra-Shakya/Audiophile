@@ -1,6 +1,5 @@
 import React from 'react'
-import { Column, Container, Row, Section } from '../../globalStyles'
-import {  Subtitle } from '../zx9/Zx9Styles'
+import { Column, Container, Row, Section } from '../../../globalStyles'
 import { ImgWrapper, TextWrapper, Wrapper, Yx1Column, Yx1Image, Yx1Row ,Yx1Wrapper, Heading,ContentButton} from './Yx1Styles'
 
 const Yx1 = () => {

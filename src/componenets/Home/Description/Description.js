@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Section } from '../../globalStyles'
+import { Container, Section } from '../../../globalStyles'
 import { ContentColumn, ContentRow, Heading, Img, ImgWrapper, Subtitle, TextWrapper } from './DescriptionStyles'
 
 const Description = () => {

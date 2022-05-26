@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Button, MainHeading, Row } from '../../globalStyles'
+import { Button, MainHeading, Row } from '../../../globalStyles'
 
 export const ZX7Section=styled.section`
 /* height: 55vh;
@@ -21,6 +21,7 @@ export const Zx7Wrapper=styled.span`
 position:relative;
 margin:0px auto;
 object-fit: cover;
+max-width: 1300px;
 `
 
 export const Zx7Image=styled.img`
@@ -28,7 +29,8 @@ width:150vh;
 max-width: 100%;
 height:100%;
 /* display:block; */
-object-fit:cover;
+object-fit:fill;
+z-index:-1;
 border-radius: 20px;
 
 /* padding:0px 50px; */
@@ -77,6 +79,8 @@ margin:0px 80px;
 border-color:black;
 color:black;
 background:none;
+z-index: 100;
+
 @media screen and (max-width: 768px) {
 
   top:120px;

@@ -1,17 +1,17 @@
 export const categoriesData=[
     {
         id:1,
-        img:'./assests/image-headphones.png',
+        img:'https://debz1.github.io/Audiophile/assests/image-headphones.png',
         title:"HEADPHONES",
     },
     {
         id:2,
-        img:'./assests/image-speakers.png',
+        img:'https://debz1.github.io/Audiophile/assests/image-speakers.png',
         title:"SPEAKERS",
     },
     {
-        id:1,
-        img:'./assests/image-earphones.png',
+        id:3,
+        img:'https://debz1.github.io/Audiophile/assests/image-earphones.png',
         title:"EARPHONES",
     },
 ]
