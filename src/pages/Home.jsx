@@ -12,7 +12,7 @@ import Footer from "../componenets/Footer/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Navbar inverse="transpa"/>
       <Headphone/>
       <Categories />
       <Zx9 />

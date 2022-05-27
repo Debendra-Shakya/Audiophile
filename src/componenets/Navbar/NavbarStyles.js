@@ -138,3 +138,8 @@ export const NavBtnLink = styled(Link)`
 export const NavCart=styled.div`
 	
 `
+
+export const NavbarWrapper=styled.div`
+height: 80px;
+background-color: black;
+`
