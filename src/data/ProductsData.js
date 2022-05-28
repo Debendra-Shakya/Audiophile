@@ -22,6 +22,6 @@ export const FeatureBox=[
     {
         id:5,
         count:"1X",
-        title:"Headphone Unit",
+        title:"Travel Bag",
     },
 ]

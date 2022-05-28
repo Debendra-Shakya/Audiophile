@@ -18,7 +18,7 @@ justify-content: space-around;
 
 export const ContentColumn = styled.div`
 margin-bottom: 10px;
-margin-top:100px;
+/* margin-top:100px; */
 padding-right: 15px;
 padding-left: 75px;
 flex: 1;
@@ -34,13 +34,14 @@ flex-direction: column;
 `;
 
 export const FeatureText = styled.p`
-font-size: clamp(0.9rem, 1vw, 2rem);
+font-size: clamp(0.9rem, large, 2rem);
 	margin-bottom: 1rem;
     margin-top:2rem;
 	color: #000;
 	width: 100%;
 	text-align: left;
-    /* opacity: 0.3; */
+	font-weight: 700;
+    opacity: 0.6;
 `;
 
 // export const FeatureRow = styled.div`
@@ -68,10 +69,13 @@ export const FeatureRow = styled.div`
 export const Title=styled.p`
 
 font-weight: 900;
-font-size: 24px;
+font-size: 20px;
 /* margin-left: auto; */
 margin-right:auto;
+opacity:0.6;
 `
 export const CountText=styled.p`
 padding-right: 20px;
+color:orange;
+font-weight: 700;
 `

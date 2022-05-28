@@ -18,7 +18,20 @@ const Features = () => {
         <ContentRow>
           <ContentColumn>
             <FeatureHeading>FEATURES</FeatureHeading>
-            <FeatureText>
+         
+          </ContentColumn>
+          <ContentColumn>
+            <FeatureHeading>IN THE BOX</FeatureHeading>
+
+
+   
+
+
+          </ContentColumn>
+        </ContentRow>
+        <ContentRow>
+          <ContentColumn>
+               <FeatureText>
               Featuring a genuine leather head strap and premium earcups, these
               headphones deliver superior comfort for those who like to enjoy
               endless listening. It includes intuitive controls desgined for any
@@ -37,10 +50,7 @@ const Features = () => {
             </FeatureText>
           </ContentColumn>
           <ContentColumn>
-            <FeatureHeading>IN THE BOX</FeatureHeading>
-
-
-            {FeatureBox.map((el,index)=>(
+         {FeatureBox.map((el,index)=>(
   <FeatureRow key={index}>
       <CountText>
 
@@ -51,10 +61,9 @@ const Features = () => {
 
   </FeatureRow>
 ))}
-
-
           </ContentColumn>
         </ContentRow>
+
       </Container>
     </Section>
   );
