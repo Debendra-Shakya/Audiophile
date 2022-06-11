@@ -17,6 +17,18 @@ export const Zx7Row=styled(Row)`
 /* justify-content: center;
 align-items: center; */
 `
+export const ContentRow = styled.div`
+	display: flex;
+	margin: 0 -15px -15px -15px;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+	justify-content: space-around;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column-reverse;
+	}
+`;
 export const Zx7Wrapper=styled.span`
 position:relative;
 margin:0px auto;
@@ -75,7 +87,9 @@ export const Zx7Button = styled(Button)`
 position: absolute;
 top: 200px;
 align-items: center;
-margin:0px 80px;
+margin:0px -1100px;
+/* position:fixed; */
+margin-right:auto;
 border-color:black;
 color:black;
 background:none;
