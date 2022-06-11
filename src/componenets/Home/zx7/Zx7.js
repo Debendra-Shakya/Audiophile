@@ -17,11 +17,11 @@ const Zx7 = () => {
         <Zx7Wrapper>
 
 
-          <Container>
+         
           <Zx7Image src="./assests/image-speaker-zx7.jpg" />
             <Zx7Heading>ZX7 SPEAKER</Zx7Heading>
             <Zx7Button>SEE PRODUCT</Zx7Button>
-          </Container>
+   
         </Zx7Wrapper>
       </Zx7Row>
     </Section>

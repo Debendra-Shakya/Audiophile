@@ -20,7 +20,7 @@ import {
 const ZX9t = () => {
   return (
     <Section inverse="a" >
-    <Container>
+
       <Zx9Wrapper>
       <ContentRow>
       <ContentColumn>
@@ -47,7 +47,6 @@ const ZX9t = () => {
        
       </ContentRow>
       </Zx9Wrapper>
-    </Container>
   </Section>
   );
 };

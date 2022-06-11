@@ -8,7 +8,7 @@ const Yx1 = () => {
     <Section padding="0px 0 0 0"inverse="d">
      
         
-        <Container>
+        
         <Yx1Row>
         <Yx1Column>
           <ImgWrapper>
@@ -31,7 +31,7 @@ const Yx1 = () => {
         </Yx1Column>
 
       </Yx1Row>
-      </Container>
+      
     </Section>
   )
 }

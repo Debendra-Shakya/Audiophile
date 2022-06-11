@@ -7,6 +7,7 @@ import Yx1 from "../componenets/Home/yx1/Yx1";
 import Zx7 from "../componenets/Home/zx7/Zx7";
 import Zx9 from "../componenets/Home/zx9/Zx9";
 import Footer from "../componenets/Footer/Footer";
+import { Container } from "../globalStyles";
 
 
 const Home = () => {
@@ -14,11 +15,13 @@ const Home = () => {
     <>
       <Navbar inverse="transpa"/>
       <Headphone/>
+      <Container>
       <Categories />
       <Zx9 />
       <Zx7 />
       <Yx1 />
       <Description/>
+    </Container>
       <Footer/>
     </>
   );

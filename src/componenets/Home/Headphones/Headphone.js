@@ -15,7 +15,7 @@ const Headphone = () => {
   return (
     <HeadphoneSection >
           <HeadphoneImage src="https://debz1.github.io/Audiophile/assests/image-hero.jpg" alt="hero"/>
-      <Container>
+    
  
       <hr style={{
           background: "white",
@@ -34,7 +34,7 @@ const Headphone = () => {
 
 
 
-   
+   <Container>
         <HeadphoneText>NEW PRODUCT</HeadphoneText>
         <HeadphoneMainHeading>XX99 MARK II HEADPHONES</HeadphoneMainHeading>
         <HeadphoneTextOne>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</HeadphoneTextOne>
@@ -42,8 +42,7 @@ const Headphone = () => {
           {/* <Button>get started</Button> */}
           <HeadphoneButton>SEE PRODUCT</HeadphoneButton>
         </ButtonWrapper>
-      
-      </Container>
+        </Container>
     </HeadphoneSection>
   );
 };

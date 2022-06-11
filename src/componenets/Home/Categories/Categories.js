@@ -9,7 +9,7 @@ import { FeatureColumn,Image, Info, Title,CategoriesButton,CateItemContainer, Wr
 const Categories = () => {
   return (
   <Section smPadding="50px 10px" inverse="about" postition="relative">
-    <Container>
+   
 <Wrapper>
 {categoriesData.map((el,index)=>(
   <FeatureColumn key={index}>
@@ -31,7 +31,6 @@ const Categories = () => {
 
 </Wrapper>
 
-    </Container>
 
 
   </Section>
