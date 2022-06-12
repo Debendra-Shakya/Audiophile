@@ -63,10 +63,11 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     padding-bottom: 65px;
-    > h1,
+    > h2,
     p {
+		width: 75%;
       text-align: center;
     }
     display: flex;
@@ -116,7 +117,7 @@ export const Heading = styled.h2`
   font-weight: 600;
   color: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     text-align: center;
     padding: 0;
     width: 75%;
