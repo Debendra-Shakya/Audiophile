@@ -10,6 +10,7 @@ import Footer from "../componenets/Footer/Footer";
 import { Container } from "../globalStyles";
 
 
+
 const Home = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const Home = () => {
       <Categories />
       <Zx9 />
       <Zx7 />
+  
       <Yx1 />
       <Description/>
     </Container>

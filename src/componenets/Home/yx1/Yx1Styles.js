@@ -1,83 +1,56 @@
 import styled from 'styled-components'
-import { Column, Row } from '../../../globalStyles'
 
-export const Yx1Row= styled(Row)`
-flex:flex;
-margin: 0 -15px -15px -15px;
-	flex-wrap: wrap;
-	align-items: center;
-	flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-	justify-content: space-around;
 
-	@media screen and (max-width: 768px) {
-		flex-direction: column-reverse;
-	}
-`
-export const Yx1Column=styled(Column)`
-	margin-bottom: 10px;
-  margin-top:100px;
-	padding-right: 15px;
-	padding-left: 75px;
-	flex: 1;
-	z-index: 10;
-	display: flex;
-	flex-direction: column;
-	@media screen and (max-width: 768px) {
-		max-width: 100% !important;
-		flex-basis: 100%;
-		justify-content: center;
-		align-items: center;
-	}
-`
-export const ImgWrapper = styled.div`
-	display: flex;
-	justify-content: 'flex-end';
-	max-height: 700px;
-	justify-content: center;
-	position: relative;
-`;
-
-export const Yx1Image=styled.img`
-	padding-right: 0;
-	border: 0;
-	max-width: 100%;
-	vertical-align: middle;
-	display: inline-block;
-	object-fit: cover;
-	max-height: 700px;
-	z-index: 1;
-    border-radius: 20px;
-
-`
 export const Wrapper=styled.span`
 display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	margin-top: 3rem;
 	grid-gap: 5rem;
-   background-color: #f1f1f1;
-   border-radius: 10px;
+   /* background-color: white; */
+   
+   /* border-radius: 50px; */
    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
 
-   @media screen and (max-width: 1100px) {
-		/* grid-template-columns: repeat(1, 1fr); */
-		grid-row-gap: 3rem;
+   @media screen and (max-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+		margin-top:3rem;
 	}
 
 	@media screen and (max-width: 568px) {
 		grid-template-columns: repeat(1, 1fr);
 	}
 `
+
+export const Yx1Image=styled.img`
+	width: 100%;
+	height:100%;
+	/* vertical-align: middle; */
+	/* display: inline-block; */
+	object-fit: fill;
+	/* max-height: 700px; */
+	/* z-index: 1; */
+    border-radius: 20px;
+    /* overflow:hidden; */
+
+`
+
 export const TextWrapper = styled.div`
 	/* max-width: 540px; */
+	max-height:540px;
 	/* padding-top: 0; */
     /* position:relative; */
     background-color: #f1f1f1;
     padding: 40px;
     border-radius: 20px;
-    height:40vh;
-    text-align: left;
+    /* height:33vh; */
+    /* text-align: left; */
+	z-index: 100;
     
+	/* @media screen and (max-width: 1100px) {
+position: fixed;
 
+	} */
 
 
 	@media screen and (max-width: 768px) {
@@ -109,7 +82,7 @@ export const Heading = styled.h2`
     
 
 	@media screen and (max-width: 768px) {
-		text-align: center;
+		text-align: left;
 	}
 `;
 
