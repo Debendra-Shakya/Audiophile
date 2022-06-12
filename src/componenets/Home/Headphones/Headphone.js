@@ -11,10 +11,18 @@ import {
   Wrapper,
 } from "./HeadphoneStyles";
 
+
 const Headphone = () => {
+
+  const desktopImage = process.env.PUBLIC_URL+ "/assests/home/desktop/image-hero.jpg";
+  const tabletImage = process.env.PUBLIC_URL + "/assests/home/tablet/image-header.jpg";
+
+  const ImageUrl = window.innerWidth >= 943 ? desktopImage : tabletImage;
+  console.log(window.innerWidth)
   return (
     <HeadphoneSection >
-          <HeadphoneImage src="https://debz1.github.io/Audiophile/assests/image-hero.jpg" alt="hero"/>
+          {/* <HeadphoneImage src="https://debz1.github.io/Audiophile/assests/image-hero.jpg" alt="hero"/> */}
+          <HeadphoneImage src={ImageUrl} alt="hero"/>
     
  
       <hr style={{
