@@ -4,7 +4,7 @@ import { ContentButton, Heading, TextWrapper, Wrapper, Yx1Image } from './Yx1Sty
 
 const Yx1 = () => {
   return (
-    <Section padding="0" inverse='a'>
+    <Section smPadding="0"inverse='a'>
         <Wrapper>
         <Yx1Image src="./assests/image-earphones-yx1.jpg"/>
         <TextWrapper>

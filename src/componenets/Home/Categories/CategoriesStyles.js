@@ -30,6 +30,15 @@ z-index: 2;
 margin-top: -100px; 
 /* margin-bottom: 500px; */
 /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
+
+@media screen and (max-width: 960px) {
+		height:15vh;
+		margin-top: -50px;
+	}
+	/* @media screen and (max-width: 768px) {
+		height:15vh;
+		margin-top: -50px;
+	} */
 `
 
 
@@ -45,11 +54,11 @@ display: grid;
 	margin-top: 3rem;
 	grid-gap: 5rem;
    /* background-color: #f1f1f1; */
-   border-radius: 10px;
+   /* border-radius: 10px; */
    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
 
-   @media screen and (max-width: 1100px) {
-		grid-row-gap: 3rem;
+   @media screen and (max-width: 768px) {
+		grid-gap: 2rem;
 	}
 
 	@media screen and (max-width: 568px) {
@@ -84,4 +93,6 @@ export const FeatureColumn = styled.div`
 	padding: 10px;
 	box-shadow: 0 0 32px 8px #d0d0d0;
 	border-radius: 20px;
+	   /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
+
 `;
