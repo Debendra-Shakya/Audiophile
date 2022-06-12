@@ -21,50 +21,50 @@ z-index: -1;
 //testing
 `;
 export const HeadphoneText = styled.p`
-
-/* font-size: clamp(0.9rem,1.5vw,1.3rem);
-line-height: 24px;
-text-align: left;
-letter-spacing: 5px;
-color:#fff;
-opacity: 0.3;
-margin-left: -80px; */
-
-
-
-font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+font-size: clamp(0.9rem, 2vw, 1.7rem);
 	margin-bottom: 1rem;
 	color: #fff;
 	width: 100%;
 	letter-spacing: 5px;
 	text-align: left;
     opacity: 0.3;
-`;
-export const HeadphoneTextOne = styled.p`
 
-/* font-size: clamp(0.9rem,1.5vw,1.3rem);
-line-height: 24px;
-text-align: left;
-color:#fff;
-opacity: 0.3;
-margin-left: -80px;
-padding-right: 78vh;
-margin-bottom: 20px; */
+	@media screen and (max-width: 960px) {
+		text-align: center;
+	}
+
+`;
+export const HeadphoneTextOne = styled.div`
+
 font-size: clamp(0.9rem, 1.5vw, 5rem);
 	margin-bottom: 1rem;
 	color: #fff;
 	width: 50%;
 	text-align: left;
     opacity: 0.3;
+
+	@media screen and (max-width: 960px) {
+		text-align: center;
+		margin:0 25%;
+	}
+
 `;
+export const TextWrapper=styled.span`
+display: block;
+justify-content: center;
+text-align: center;
+`
 
 export const ButtonWrapper = styled.div`
+margin-top: 2rem;
 width:100%;
 display: flex;
 justify-content: left;
 flex-flow: wrap;
 gap:0.5rem;
-
+@media screen and (max-width: 960px) {
+	justify-content: center;
+	}
 `;
 export const HeadphoneButton = styled(Button)`
 background-color:  #d87c49;
@@ -76,8 +76,11 @@ padding-right: 60vh; */
 width:75%;
 
 text-align: left;
-${MainHeading}
 
+
+@media screen and (max-width: 960px) {
+		text-align: right;
+	}
 
 `
 export const Wrapper=styled.span`

@@ -9,6 +9,7 @@ import {
   HeadphoneMainHeading,
   HeadphoneTextOne,
   Wrapper,
+  TextWrapper,
 } from "./HeadphoneStyles";
 
 import { useEffect, useState } from "react";
@@ -36,7 +37,7 @@ const Headphone = () => {
     const { innerWidth } = window;
     return { innerWidth };
   }
-  const ImageUrl = windowSize.innerWidth >= 943 ? desktopImage : tabletImage;
+  const ImageUrl = windowSize.innerWidth > 960 ? desktopImage : tabletImage;
 
   return (
     <HeadphoneSection>
@@ -58,12 +59,14 @@ const Headphone = () => {
       />
 
       <Container>
+        <TextWrapper>
         <HeadphoneText>NEW PRODUCT</HeadphoneText>
         <HeadphoneMainHeading>XX99 MARK II HEADPHONES</HeadphoneMainHeading>
         <HeadphoneTextOne>
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </HeadphoneTextOne>
+        </TextWrapper>
         <ButtonWrapper>
           {/* <Button>get started</Button> */}
           <HeadphoneButton>SEE PRODUCT</HeadphoneButton>
