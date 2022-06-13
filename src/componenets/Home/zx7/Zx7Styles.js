@@ -3,11 +3,11 @@ import { Button, MainHeading, Row } from '../../../globalStyles'
 
 export const ZX7Section=styled.section`
 /* height: 55vh;
-width:100%;
 background-position: center;
 /* background-size: cover; */
 /* padding-top:clamp(70px,5vh,220px);
 overflow: hidden;
+width:100%;
 box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);  */
 `
 export const Zx7Wrapper=styled.div`

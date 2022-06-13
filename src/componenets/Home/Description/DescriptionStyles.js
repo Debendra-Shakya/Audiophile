@@ -8,21 +8,21 @@ export const ContentRow = styled.div`
 	flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 	justify-content: space-around;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 960px) {
 		flex-direction: column-reverse;
 	}
 `;
 
 export const ContentColumn = styled.div`
 	margin-bottom: 10px;
-  margin-top:100px;
-	padding-right: 15px;
-	padding-left: 75px;
+  /* margin-top:100px; */
+	/* padding-right: 15px; */
+	/* padding-left: 75px; */
 	flex: 1;
 	z-index: 10;
 	display: flex;
 	flex-direction: column;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 960px) {
 		max-width: 100% !important;
 		flex-basis: 100%;
 		justify-content: center;
@@ -31,8 +31,8 @@ export const ContentColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-	max-width: 540px;
-	padding-top: 0;
+	/* max-width: 540px; */
+	/* padding-top: 0; */
 
 	@media screen and (max-width: 768px) {
 		padding-bottom: 65px;
@@ -53,9 +53,11 @@ export const TextWrapper = styled.div`
 
 
 export const Heading = styled.h2`
-	margin-bottom: 24px;
-  padding-right: 100px;
-	font-size: 2.3rem;
+	margin-bottom: 35px;
+	width: 95%;
+  /* padding-right: 100px; */
+  padding-left: 12px;
+	font-size: 48px;
 	line-height: 1.1;
 	font-weight: 600;
 	color: black;
@@ -63,16 +65,19 @@ export const Heading = styled.h2`
         color:#d87c49;
     }
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 960px) {
 		text-align: center;
+		
+
 	}
 
 `;
 
 export const Subtitle = styled.p`
-	max-width: 440px;
+	/* max-width: 440px; */
 	margin-bottom: 35px;
 	line-height: 24px;
+	padding-left: 12px;
 	color:black;
     word-spacing: 1.3px;
     letter-spacing: 1px;
@@ -80,12 +85,16 @@ export const Subtitle = styled.p`
    font-weight:700 ;
   /* opacity:0.6; */
   /* padding-right: 100px; */
+  @media screen and (max-width: 960px) {
+		text-align: center;
+		margin: 0 70px;
+	}
 `;
 
 export const ImgWrapper = styled.div`
 	display: flex;
 	justify-content: 'flex-end';
-	max-height: 700px;
+	/* max-height: 700px; */
 	justify-content: center;
 	position: relative;
 `;
@@ -93,11 +102,12 @@ export const ImgWrapper = styled.div`
 export const Img = styled.img`
 	/* padding-right: 0; */
 	/* border: 0; */
-	/* max-width: 100%; */
+	max-width: 100%;
 	/* vertical-align: middle; */
 	/* display: inline-block; */
-	/* object-fit: cover; */
+	object-fit: cover;
 	/* max-height: 700px; */
+
 	z-index: 1;
     border-radius: 20px;
 `;

@@ -4,7 +4,7 @@ import { ContentColumn, ContentRow, Heading, Img, ImgWrapper, Subtitle, TextWrap
 
 const Description = () => {
   return (
- <Section inverse="a" padding="30px 0 130px 0">
+ <Section inverse="a" padding="70px 0 130px 0">
 
 <ContentRow>
     
