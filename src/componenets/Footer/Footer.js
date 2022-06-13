@@ -18,7 +18,7 @@ import {
 
 const Footer = () => {
   return (
-    <Section padding="0px 0 0 0">
+    <Section padding="0px 0 0 0" >
       <Container>
         <FooterRow>
           <FooterColumn>

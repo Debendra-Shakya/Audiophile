@@ -8,8 +8,9 @@ export const FooterRow=styled.div`
 	flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 	justify-content: space-around;
 
-	@media screen and (max-width: 768px) {
-		flex-direction: column-reverse;
+	@media screen and (max-width: 960px) {
+		flex-direction: column;
+		align-items:stretch ;
 	}
 `
 export const FooterColumn=styled.div`
@@ -21,11 +22,12 @@ margin-bottom: 10px;
 	z-index: 10;
 	display: flex;
 	flex-direction: column;
-	@media screen and (max-width: 768px) {
-		max-width: 100% !important;
-		flex-basis: 100%;
-		justify-content: center;
-		align-items: center;
+	@media screen and (max-width: 960px) {
+		/* max-width: 100% !important; */
+		margin-top:30px;
+		padding:0;
+		/* flex-basis: 100%; */
+		
 	}
 `
 export const FooterWrapper=styled.span`
@@ -34,9 +36,13 @@ margin-right:auto;
 
 `
 
-export const FooterLogo=styled.h2`
+export const FooterLogo=styled.h1`
 color:#fff;
 font-weight: 700;
+font-size: 48px;
+@media screen and (max-width: 960px) {
+		margin-left: 25px;
+	}
 `
 
 export const FooterSocialIcon = styled.a`
@@ -48,6 +54,7 @@ export const LogoWrapper=styled.span`
 margin-left: auto;
 /* margin-right:auto; */
 margin-top:auto;
+
 `
 
 export const FooterLinks = styled.span`
@@ -83,13 +90,13 @@ export const FooterItem = styled.li`
 
 	cursor: pointer;
 
-	@media screen and (max-width: 960px) {
+	/* @media screen and (max-width: 960px) {
 		width: 100%;
 
 		&:hover {
 			border: none;
 		}
-	}
+	} */
 `;
 export const FooterMenu = styled.ul`
  display: flex;
@@ -98,7 +105,9 @@ export const FooterMenu = styled.ul`
 	text-align: center;
 	width: 100%;
 
-	@media screen and (max-width: 960px) {
+
+
+	/* @media screen and (max-width: 960px) {
 		flex-direction: column;
 		width: 100%;
 		height: 100vh;
@@ -116,7 +125,7 @@ export const FooterMenu = styled.ul`
 	> li:first-child {
 		margin-left: auto;
 	
-  }
+  } */
   /* > li:first-child {
 		margin-left: auto;
 	} */
@@ -126,7 +135,13 @@ export const FooterDescription=styled.p`
 color:#fff;
 opacity: 0.6;
 font-size: 17px;
+@media screen and (max-width: 960px) {
+		margin-left: 25px;
+	}
 `
 export const FooterCopyRight= styled.div`
 color:#fff;
+@media screen and (max-width: 960px) {
+		margin-left: 25px;
+	}
 `
