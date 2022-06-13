@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Section } from "../../../globalStyles";
 import {
+  ContentRow,
   ImageContainer,
   Zx7Button,
   Zx7Heading,
@@ -12,18 +13,16 @@ import {
 
 const Zx7 = () => {
   return (
-    <Section inverse="a" padding="50px 0 0 0">
-      <Zx7Row>
+    <Section inverse="a" padding="50px 0 0 0" smPadding="0">
         <Zx7Wrapper>
 
 
          
           <Zx7Image src="./assests/image-speaker-zx7.jpg" />
             <Zx7Heading>ZX7 SPEAKER</Zx7Heading>
-            <Zx7Button>SEE PRODUCT</Zx7Button>
    
+            <Zx7Button>SEE PRODUCT</Zx7Button>
         </Zx7Wrapper>
-      </Zx7Row>
     </Section>
   );
 };

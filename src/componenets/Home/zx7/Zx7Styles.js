@@ -10,50 +10,31 @@ background-position: center;
 overflow: hidden;
 box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);  */
 `
-export const ImageContainer=styled.div`
-/* flex:1; */
-`
-export const Zx7Row=styled(Row)`
-/* justify-content: center;
-align-items: center; */
-`
-export const ContentRow = styled.div`
-	display: flex;
-	margin: 0 -15px -15px -15px;
-	flex-wrap: wrap;
-	align-items: center;
-	flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-	justify-content: space-around;
-
-	@media screen and (max-width: 768px) {
-		flex-direction: column-reverse;
-	}
-`;
-export const Zx7Wrapper=styled.span`
+export const Zx7Wrapper=styled.div`
 position:relative;
-margin:0px auto;
-object-fit: cover;
-max-width: 1300px;
+
 `
 
 export const Zx7Image=styled.img`
 width:150vh;
 max-width: 100%;
 height:100%;
+
 /* display:block; */
-object-fit:fill;
-z-index:-1;
+/* object-fit:fill; */
+/* z-index:-1; */
 border-radius: 20px;
 
 /* padding:0px 50px; */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
 
     /* padding:0px 70px; */
     /* overflow:hidden; */
     width:100%;
-    display: flex;
+	height:30vh;
+    /* display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: center; */
 
     /* margin:0px 0 30px 30px; */
 	}
@@ -61,43 +42,38 @@ border-radius: 20px;
 
 `
 export const Zx7Heading=styled(MainHeading)`
-/* color:black;
-z-index:4;
-text-align: left;
-margin-top:100px;
-font-size: clamp(1.3rem,13vw,3.1rem); */
+
 font-size: clamp(1.3rem,13vw,2.3rem);
 color:black;
 position: absolute;
 top: 100px;
+left:10%;
 text-align: left;
-margin:25px 0;
-padding:0px 80px;
+/* margin:25px 0; */
+/* padding:0px 80px; */
 letter-spacing: 0px;
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
 
-top:75px;
-margin:0;
-padding: 0;
+top:25%;
+left:10%;
+
 }
 `
 export const Zx7Button = styled(Button)`
 position: absolute;
-top: 200px;
-align-items: center;
-margin:0px -1100px;
-/* position:fixed; */
-margin-right:auto;
+top: 60%;
+left:10%;
 border-color:black;
 color:black;
 background:none;
-z-index: 100;
+box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
 
-@media screen and (max-width: 768px) {
 
-  top:120px;
+@media screen and (max-width: 960px) {
+
+  top:50%;
   margin:0;
 	}
   /* &:before {

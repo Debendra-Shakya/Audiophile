@@ -91,13 +91,13 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-	padding-right: 0;
-	border: 0;
-	max-width: 100%;
-	vertical-align: middle;
-	display: inline-block;
-	object-fit: cover;
-	max-height: 700px;
+	/* padding-right: 0; */
+	/* border: 0; */
+	/* max-width: 100%; */
+	/* vertical-align: middle; */
+	/* display: inline-block; */
+	/* object-fit: cover; */
+	/* max-height: 700px; */
 	z-index: 1;
     border-radius: 20px;
 `;

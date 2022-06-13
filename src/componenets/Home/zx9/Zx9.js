@@ -19,7 +19,7 @@ import {
 
 const ZX9t = () => {
   return (
-    <Section inverse="a" >
+    <Section inverse="a" smPadding="0 0 50px 0">
 
       <Zx9Wrapper>
       <ContentRow>
