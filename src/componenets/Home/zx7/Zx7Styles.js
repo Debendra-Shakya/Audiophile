@@ -16,8 +16,8 @@ position:relative;
 `
 
 export const Zx7Image=styled.img`
-width:150vh;
-max-width: 100%;
+/* width:150vh; */
+width: 100%;
 height:100%;
 
 /* display:block; */
@@ -46,18 +46,22 @@ export const Zx7Heading=styled(MainHeading)`
 font-size: clamp(1.3rem,13vw,2.3rem);
 color:black;
 position: absolute;
-top: 100px;
-left:10%;
+top: 30%;
 text-align: left;
-/* margin:25px 0; */
-/* padding:0px 80px; */
+padding-left: 110px;
 letter-spacing: 0px;
 
 
 @media screen and (max-width: 960px) {
+	top:100px;
+padding-left:85px;
 
-top:25%;
-left:10%;
+
+}
+@media screen and (max-width: 768px) {
+	top:75px;
+padding-left:70px;
+
 
 }
 `

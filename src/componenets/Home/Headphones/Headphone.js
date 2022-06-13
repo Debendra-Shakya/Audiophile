@@ -44,6 +44,8 @@ const Headphone = () => {
       {/* <HeadphoneImage src="https://debz1.github.io/Audiophile/assests/image-hero.jpg" alt="hero"/> */}
       <HeadphoneImage src={ImageUrl} alt="hero" />
 
+      <Container>
+
       <hr
         style={{
           background: "white",
@@ -57,8 +59,6 @@ const Headphone = () => {
           opacity: "0.3",
         }}
       />
-
-      <Container>
         <TextWrapper>
         <HeadphoneText>NEW PRODUCT</HeadphoneText>
         <HeadphoneMainHeading>XX99 MARK II HEADPHONES</HeadphoneMainHeading>
