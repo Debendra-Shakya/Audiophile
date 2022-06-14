@@ -12,7 +12,7 @@ import { RecommendationData } from "../../../data/RecommendationData";
 const Recommendation = () => {
   return (
     <Section inverse="a" padding="70px 0 0 0">
-      <Container>
+     
         <Heading>YOU MAY ALSO LIKE</Heading>
 
         <Wrapper>
@@ -25,7 +25,7 @@ const Recommendation = () => {
             </FeatureColumn>
           ))}
         </Wrapper>
-      </Container>
+    
     </Section>
   );
 };

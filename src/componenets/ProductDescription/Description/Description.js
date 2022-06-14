@@ -17,15 +17,15 @@ import {
 const Description = () => {
   return (
     <Section padding="50px 0 0 0" inverse="a">
-      <Container>
+      
         <ButtonWrapper>
           {/* <Button>get started</Button> */}
           <Button>Go Back</Button>
         </ButtonWrapper>
-      </Container>
+    
 
       <Section inverse="a" padding="0 0 100px 0">
-        <Container>
+        
           <ContentRow>
             <ContentColumn>
               <ImgWrapper>
@@ -56,7 +56,7 @@ const Description = () => {
               </ContentRow>
             </ContentColumn>
           </ContentRow>
-        </Container>
+    
       </Section>
     </Section>
   );

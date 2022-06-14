@@ -8,6 +8,7 @@ import FeaturePic from "../componenets/ProductDescription/FeaturesPic/FeaturePic
 import Categories from "../componenets/Home/Categories/Categories";
 import HomeDescription from "../componenets/Home/Description/Description";
 import Recommendation from "../componenets/ProductDescription/Recommendation/Recommendation";
+import { Container } from "../globalStyles";
 
 const Products = () => {
   return (
@@ -15,12 +16,14 @@ const Products = () => {
       <NavbarWrapper>
         <Navbar />
       </NavbarWrapper>
+      <Container>
       <Description />
       <Features />
       <FeaturePic />
       <Recommendation />
       <Categories />
  <HomeDescription/>
+ </Container>
  <Footer/>
 
       {/* <Footer/> */}

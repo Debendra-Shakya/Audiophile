@@ -6,7 +6,7 @@ import { ContentColumn, ContentRow, Image } from './FeaturePicStyles'
 const FeaturePic = () => {
   return (
     <Section padding="0" inverse="a">
-        <Container>
+
         <ContentRow>
            <ContentColumn>
               
@@ -22,7 +22,7 @@ const FeaturePic = () => {
                </ContentColumn>
 
         </ContentRow>
-        </Container>
+ 
     </Section>
   )
 }

@@ -14,7 +14,7 @@ import {
 const Features = () => {
   return (
     <Section padding="0" inverse="a">
-      <Container>
+     
         <ContentRow>
           <ContentColumn>
             <FeatureHeading>FEATURES</FeatureHeading>
@@ -64,7 +64,6 @@ const Features = () => {
           </ContentColumn>
         </ContentRow>
 
-      </Container>
     </Section>
   );
 };
