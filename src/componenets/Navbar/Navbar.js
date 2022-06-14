@@ -1,6 +1,8 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { CgMenuRight } from "react-icons/cg";
+import {FaCartPlus} from "react-icons/fa"
+
 import { IconContext } from "react-icons";
 import { useLocation, useHistory } from 'react-router-dom';
 import {
@@ -64,8 +66,7 @@ const Navbar = () => {
                 {/* <NavLinks onClick={()=>closeMobileMenu(e1.to,e1.id)}></NavLinks> */}
                 <NavLinks>
                   {el.text}
-                  {el.icon}
-                
+
                 </NavLinks>
                 {/* <NavCart>{el.icon}</NavCart> */}
       
@@ -74,6 +75,9 @@ const Navbar = () => {
             ))}
   
           </NavMenu>
+                  <NavCart show={show}>
+                    <FaCartPlus />
+                  </NavCart>
        
 
         </NavbarContainer>

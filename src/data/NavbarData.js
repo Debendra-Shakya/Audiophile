@@ -19,8 +19,4 @@ export const data = [
 		to: '/earphones',
 		text: 'EARPHONES',
 	},
-	{
-		to:'/cart',
-		icon: iconStyle(FaCartPlus),
-	}
 ];
