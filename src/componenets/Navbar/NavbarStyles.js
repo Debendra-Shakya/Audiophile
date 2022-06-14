@@ -19,20 +19,28 @@ export const Nav = styled.nav`
 `;
 export const NavbarContainer = styled(Container)`
   display: flex;
-  justify-content: start;
+  /* justify-content: start; */
   height: 80px;
 
   ${Container}
 `;
 export const NavLogo = styled.nav`
   color: #fff;
-  justify-self: flex-start;
+  /* justify-self: flex-start; */
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
   z-index: 50;
+  @media screen and (max-width: 960px) {
+    display: flex;
+  align-items: center;
+    transform: translate(90%, 0%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
 `;
 // export const NavIcon = styled.nav``
 export const MobileIcon = styled.div`
@@ -43,8 +51,7 @@ export const MobileIcon = styled.div`
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(0%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -134,18 +141,13 @@ export const NavCart = styled.div`
   margin-left: auto;
 
   @media screen and (max-width: 960px) {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    padding-top: 80%;
+    display: block;
+    position: absolute;
     top: 0;
-    left: 0;
-    opacity: ${({ show }) => (show ? 1 : 0)};
-    visibility: ${({ show }) => (show ? "visible" : "hidden")};
-    /* transform: translateY(${({ show }) => (show ? "0" : "-10px")});
-		transition: opacity 0.5s ease;
-		background-color: #071c2f; */
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
   }
 `;
 

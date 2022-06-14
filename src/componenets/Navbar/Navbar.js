@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { CgMenuRight } from "react-icons/cg";
+import { CgMenuLeft } from "react-icons/cg";
 import {FaCartPlus} from "react-icons/fa"
 
 import { IconContext } from "react-icons";
@@ -57,7 +58,7 @@ const Navbar = () => {
         <NavbarContainer>
           <NavLogo to="/">audiophile</NavLogo>
 
-          <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
+          <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuLeft />}</MobileIcon>
 
           <NavMenu show={show}>
 
