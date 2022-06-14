@@ -13,6 +13,8 @@ import {
   OneWrapper,
   Text,
   CartButton,
+  Wrapper,
+  FeatureColumn,
 } from "./DescriptionStyles";
 const Description = () => {
   return (
@@ -42,18 +44,21 @@ const Description = () => {
                 sound.
               </ProductTextOne>
               <ProductMainHeading>$2900</ProductMainHeading>
-              <ContentRow>
-                <ContentColumn>
-                  <OneWrapper>
+
+              <Wrapper>
+                <FeatureColumn>
+                <OneWrapper>
                     <Button>-</Button>
                     <Text>1</Text>
                     <Button>+</Button>
                   </OneWrapper>
-                </ContentColumn>
-                <ContentColumn>
-                  <CartButton>Add to cart</CartButton>
-                </ContentColumn>
-              </ContentRow>
+                
+                </FeatureColumn>
+                <FeatureColumn>
+
+                <CartButton>Add to cart</CartButton>
+                </FeatureColumn>
+              </Wrapper>
             </ContentColumn>
           </ContentRow>
     

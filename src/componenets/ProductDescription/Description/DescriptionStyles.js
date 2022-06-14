@@ -53,10 +53,12 @@ flex-wrap: wrap;
 align-items: center;
 flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 justify-content: space-around;
+   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
 
+/* 
 @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
-}
+} */
 `;
 
 export const ContentColumn = styled.div`
@@ -64,15 +66,17 @@ margin-bottom: 10px;
 margin-top:100px;
 padding-right: 15px;
 padding-left: 75px;
-flex: 1;
+flex:1;
 z-index: 10;
 display: flex;
 flex-direction: column;
 @media screen and (max-width: 768px) {
     max-width: 100% !important;
-    flex-basis: 100%;
-    justify-content: center;
-    align-items: center;
+    /* flex-basis: 100%; */
+    /* justify-content: center; */
+    /* align-items: center; */
+   /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
+
 }
 `;
 
@@ -119,8 +123,9 @@ export const ProductMainHeading=styled(MainHeading)`
 margin-left: -80px;
 padding-right: 60vh; */
 width:75%;
-font-size:32px;
+font-size:24px;
 color:#000;
+letter-spacing: 0;
 
 text-align: left;
 ${MainHeading}
@@ -135,7 +140,10 @@ display: grid;
    background-color: #f1f1f1;
    border-radius: 10px;
    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
-
+   @media screen and (max-width: 960px) {
+    /* grid-row-gap: 1rem; */
+    grid-gap: 1rem;
+  }
 
 `;
 export const Text=styled.p`
@@ -146,5 +154,35 @@ align-items:center;
 
 export const CartButton = styled(Button)`
 background-color:  #d87c49;
+`;
+
+export const Wrapper = styled.span`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  grid-gap: 5rem;
+  /* background-color: #f1f1f1; */
+  border-radius: 10px;
+  /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
+
+  @media screen and (max-width: 960px) {
+    /* grid-row-gap: 1rem; */
+    grid-gap: 1rem;
+  }
+
+  @media screen and (max-width: 568px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+export const FeatureColumn = styled.div`
+  display: flex;
+  flex-flow: column;
+  /* justify-content: left; */
+  align-items: center;
+  /* background-color: #f1f1f1; */
+  padding: 10px;
+  /* box-shadow: 0 0 32px 8px #d0d0d0; */
+  border-radius: 20px;
 `;
 
