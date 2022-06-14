@@ -53,7 +53,7 @@ flex-wrap: wrap;
 align-items: center;
 flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 justify-content: space-around;
-   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+   /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
 
 /* 
 @media screen and (max-width: 768px) {
@@ -94,11 +94,13 @@ export const ProductImage=styled.img`
 	max-width: 100%;
 	vertical-align: middle;
 	display: inline-block;
-	object-fit: cover;
-	max-height: 700px;
+	object-fit: fill;
+	height: 700px;
 	z-index: 1;
     border-radius: 20px;
-
+	@media screen and (max-width: 960px) {
+    height: 400px;
+  }
 `
 export const ProductText = styled.p`
 font-size: clamp(0.9rem, 1.5vw, 1.3rem);
