@@ -155,4 +155,8 @@ export const NavbarWrapper = styled.div`
   height: 80px;
   background-color: black;
 `;
+export const NavbarWrapperCategories = styled.div`
+  height: 350px;
+  background-color: black;
+`;
 export const NavIcon = styled.div``;
