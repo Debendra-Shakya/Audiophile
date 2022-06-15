@@ -26,7 +26,7 @@ const Description = () => {
         </ButtonWrapper>
     
 
-      <Section inverse="a" padding="0 0 100px 0">
+      <Section inverse="a" padding="0 0 100px 0" smPadding="0">
         
           <ContentRow>
             <ContentColumn>

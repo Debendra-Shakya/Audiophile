@@ -64,7 +64,7 @@ justify-content: space-around;
 export const ContentColumn = styled.div`
 margin-bottom: 10px;
 margin-top:100px;
-padding-right: 15px;
+/* padding-right: 15px; */
 padding-left: 75px;
 flex:1;
 z-index: 10;
@@ -89,17 +89,20 @@ export const ImgWrapper = styled.div`
 `;
 
 export const ProductImage=styled.img`
-	padding-right: 0;
-	border: 0;
-	max-width: 100%;
-	vertical-align: middle;
-	display: inline-block;
-	object-fit: fill;
-	height: 700px;
+	/* padding-right: 0; */
+	/* border: 0; */
+	width: 100%;
+	/* vertical-align: middle; */
+	/* display: inline-block; */
+	object-fit: cover;
+	/* object-fit: scale-down; */
+	height: 100%;
 	z-index: 1;
     border-radius: 20px;
-	@media screen and (max-width: 960px) {
-    height: 400px;
+	@media screen and (max-width: 768px) {
+		/* width: 17rem; */
+    /* height: 40vh; */
+
   }
 `
 export const ProductText = styled.p`

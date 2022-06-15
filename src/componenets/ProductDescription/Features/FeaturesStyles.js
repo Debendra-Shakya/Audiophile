@@ -2,17 +2,22 @@ import styled from "styled-components"
 
 export const FeatureHeading=styled.h2`
 font-size: 48px;
+@media screen and (max-width: 768px) {
+   margin-bottom: 1rem;
+   margin-top:1rem;
+}
+
 `
 export const ContentRow = styled.div`
 display: flex;
 margin: 0 -15px -15px -15px;
 flex-wrap: wrap;
-align-items: center;
+/* align-items: center; */
 flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 justify-content: space-around;
 
 @media screen and (max-width: 768px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 `;
 
@@ -29,7 +34,7 @@ flex-direction: column;
     max-width: 100% !important;
     flex-basis: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 `;
 
@@ -42,7 +47,19 @@ font-size: clamp(0.9rem, large, 2rem);
 	text-align: left;
 	font-weight: 700;
     opacity: 0.6;
+	@media screen and (max-width: 768px) {
+    max-width: 100% !important;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: left;
+}
 `;
+export const Wrapper=styled.div`
+margin-top: 1rem;
+@media screen and (max-width: 768px) {
+  margin: 0;
+}
+`
 
 // export const FeatureRow = styled.div`
 // 	display: flex;
