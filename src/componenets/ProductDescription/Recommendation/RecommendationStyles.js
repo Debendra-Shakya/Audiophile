@@ -21,7 +21,7 @@ export const FeatureColumn = styled.div`
 `;
 export const Image = styled.img`
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   height: 25vh;
 
   z-index: 2;
@@ -29,6 +29,13 @@ export const Image = styled.img`
   /* margin-top: -100px;  */
   /* margin-bottom: 500px; */
   /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2); */
+  @media screen and (max-width: 768px) {
+    max-width: 100% !important;
+    max-height:100%;
+    /* flex-basis: 100%; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
 `;
 
 export const Title = styled.p`
