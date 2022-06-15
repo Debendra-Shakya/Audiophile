@@ -14,7 +14,7 @@ import {
 
 const Features = () => {
   return (
-    <Section padding="0" inverse="a">
+    <Section padding="0" inverse="a" smPadding="70px 0 0 0">
       <ContentRow>
         <ContentColumn>
           <FeatureHeading>FEATURES</FeatureHeading>

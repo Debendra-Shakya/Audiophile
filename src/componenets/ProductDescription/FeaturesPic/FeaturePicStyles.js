@@ -1,8 +1,19 @@
 import styled from "styled-components"
 export const Image=styled.img`
 border-radius: 20px;
+object-fit: contain;
+width: 100%;
 /* row-gap: 200px; */
 `
+
+export const ImageOne=styled.img`
+border-radius: 20px;
+object-fit: cover;
+/* row-gap: 200px; */
+
+`
+
+
 export const ContentRow = styled.div`
 	display: flex;
 	margin: 0 -15px 25px -15px;
@@ -11,9 +22,9 @@ export const ContentRow = styled.div`
 	flex-direction: row;
 	justify-content: space-around;
 
-	@media screen and (max-width: 768px) {
+	/* @media screen and (max-width: 768px) {
 		flex-direction: column-reverse;
-	}
+	} */
 `;
 
 export const ContentColumn = styled.div`
@@ -27,9 +38,9 @@ export const ContentColumn = styled.div`
 	flex-direction: column;
  
 	@media screen and (max-width: 768px) {
-		max-width: 100% !important;
-		flex-basis: 100%;
-		justify-content: center;
-		align-items: center;
+		/* max-width: 100% !important;
+		flex-basis: 100%; */
+		/* justify-content: left;
+		align-items: center; */
 	}
 `;

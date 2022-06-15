@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Section } from '../../../globalStyles'
 
-import { ContentColumn, ContentRow, Image } from './FeaturePicStyles'
+import { ContentColumn, ContentRow, Image, ImageOne } from './FeaturePicStyles'
 
 const FeaturePic = () => {
   return (
-    <Section padding="0" inverse="a">
+    <Section padding="0" inverse="a" smPadding="0">
 
         <ContentRow>
            <ContentColumn>
