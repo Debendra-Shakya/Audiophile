@@ -173,6 +173,7 @@ export const Wrapper = styled.span`
   @media screen and (max-width: 960px) {
     /* grid-row-gap: 1rem; */
     grid-gap: 1rem;
+	overflow:hidden;
   }
 
   @media screen and (max-width: 568px) {
