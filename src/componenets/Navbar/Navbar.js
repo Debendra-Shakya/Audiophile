@@ -5,7 +5,7 @@ import { CgMenuLeft } from "react-icons/cg";
 import {FaCartPlus} from "react-icons/fa"
 
 import { IconContext } from "react-icons";
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation,useNavigate} from 'react-router-dom';
 import {
   Nav,
   NavbarContainer,
@@ -24,8 +24,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [show, setShow] = useState(false);
 
-//   let history = useHistory();
-//   let location = useLocation();
+  // let history = useHistory();
+  let location = useLocation();
+  let navigate = useNavigate();
 
 
   const handleClick = () => {
@@ -40,15 +41,14 @@ const Navbar = () => {
 //     });
 // };
 
-// const closeMobileMenu = (to, id) => {
-//     if (id && location.pathname === '/') {
-//         scrollTo(id);
-//     }
+const closeMobileMenu = (to, id) => {
+    // if (id && location.pathname === '/') {
+    //     scrollTo(id);
+    // }
 
-//     history.push(to);
-//     // navigate(to);
-//     setShow(false);
-// };
+    navigate(to);
+    setShow(false);
+};
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
@@ -64,8 +64,8 @@ const Navbar = () => {
 
             {data.map((el, index) => (
               <NavItem key={index}>
-                {/* <NavLinks onClick={()=>closeMobileMenu(e1.to,e1.id)}></NavLinks> */}
-                <NavLinks>
+                <NavLinks onClick={()=>closeMobileMenu(el.to,el.id)}>
+                {/* <NavLinks> */}
                   {el.text}
 
                 </NavLinks>
