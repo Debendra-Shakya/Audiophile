@@ -13,8 +13,10 @@ const App = () => {
       <GlobalStyle />
       <Switch>
         <Route path="/" element={<Home/>} />
-        <Route path="/products" element={<Products/>} />
-        <Route path="/headphones" element={<CategoriesD data={categoriesHeadphoneData}/>} />
+        {/* <Route path="/products/:productName" element={<Products/>} /> */}
+        <Route />
+        <Route  path="/headphones/" element={<CategoriesD data={categoriesHeadphoneData}/>}/>
+          <Route path="/products/:prodtitle" element={<Products/>}/>
         <Route path="/speakers" element={<CategoriesD data={categoriesSpeakerData}/>} />
         <Route path="/earphones" element={<CategoriesD data={categoriesEarphoneData}/>} />
       </Switch>

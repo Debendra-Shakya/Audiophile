@@ -1,5 +1,6 @@
 import React from "react";
 import { Section, Container } from "../../../globalStyles";
+import Products from "../../../pages/Products";
 import {
   ButtonWrapper,
   Button,
@@ -57,7 +58,8 @@ const Description = ({data}) => {
 
               <Wrapper>
                 <FeatureColumn>
-                  <CartButton>SEE PRODUCT</CartButton>
+                  hello
+                  <CartButton to={`/products/${el.title}`}>SEE PRODUCT</CartButton>
                 </FeatureColumn>
               </Wrapper>
             </ContentColumn>

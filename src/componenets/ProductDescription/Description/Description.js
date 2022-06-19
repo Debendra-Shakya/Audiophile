@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { Section, Container } from "../../../globalStyles";
 import {
   ButtonWrapper,
@@ -16,7 +17,23 @@ import {
   Wrapper,
   FeatureColumn,
 } from "./DescriptionStyles";
+
+import {ProductDetails} from '../../../data/ProductsData'
 const Description = () => {
+  const {prodtitle}=useParams();
+  console.log(prodtitle)
+
+  const element = ProductDetails.find((el)=>el.title===prodtitle)
+  console.log(element)
+//   const [product,setProduct]=useState([]);
+//   useEffect(()=>{
+// const detail=ProdData.map((pdata)=>{
+//   if(pdata.title==title){
+
+//   }
+  
+// })
+//   })
   return (
     <Section padding="50px 0 0 0" inverse="a">
       
@@ -31,19 +48,16 @@ const Description = () => {
           <ContentRow>
             <ContentColumn>
               <ImgWrapper>
-                <ProductImage src="./assests/product-xx99-mark-two-headphones/desktop/image-product.jpg" />
+                <ProductImage src={element.image} alt={element.title}/>
               </ImgWrapper>
             </ContentColumn>
             <ContentColumn>
-              <ProductText>NEW PRODUCT</ProductText>
-              <ProductMainHeading>XX99 MARK II HEADPHONES</ProductMainHeading>
+              <ProductText>{element.new}</ProductText>
+              <ProductMainHeading>{element.title}</ProductMainHeading>
               <ProductTextOne>
-                The new xx99 mark II headphones is the pinnacle of pristine
-                audio. It redefines your premium headphone experience by
-                reproducing the balanced depth and precision of studio-quality
-                sound.
+                {element.description}
               </ProductTextOne>
-              <ProductMainHeading>$2900</ProductMainHeading>
+              <ProductMainHeading>${element.price}</ProductMainHeading>
 
               <Wrapper>
                 <FeatureColumn>
