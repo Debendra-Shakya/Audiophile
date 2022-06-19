@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Section, Container } from "../../../globalStyles";
 import Products from "../../../pages/Products";
 import {
@@ -59,7 +60,10 @@ const Description = ({data}) => {
               <Wrapper>
                 <FeatureColumn>
                   hello
-                  <CartButton to={`/products/${el.title}`}>SEE PRODUCT</CartButton>
+                  <Link to={`/products/${el.title}`}>
+                  
+                  <CartButton >SEE PRODUCT</CartButton>
+                  </Link>
                 </FeatureColumn>
               </Wrapper>
             </ContentColumn>

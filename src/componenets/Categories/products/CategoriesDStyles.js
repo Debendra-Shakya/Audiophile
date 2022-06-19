@@ -158,7 +158,7 @@ font-size: 24px;
 align-items:center;
 `
 
-export const CartButton = styled(Link)`
+export const CartButton = styled(Button)`
 background-color:  #d87c49;
 
 `;
