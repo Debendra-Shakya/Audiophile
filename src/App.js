@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import CategoriesD from './pages/Categories'
 import { BrowserRouter as Router,Routes as Switch, Route } from "react-router-dom";
-import { categoriesHeadphoneData ,categoriesSpeakerData,categoriesEarphoneData} from "./data/CategoriesHeadphonesData";
+import { categoriesHeadphoneData ,categoriesSpeakerData,categoriesEarphoneData} from "./data/CategoriesData";
 
 const App = () => {
   return (
