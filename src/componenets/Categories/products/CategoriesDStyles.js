@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components"
 import { MainHeading } from "../../../globalStyles";
 
@@ -157,8 +158,9 @@ font-size: 24px;
 align-items:center;
 `
 
-export const CartButton = styled(Button)`
+export const CartButton = styled(Link)`
 background-color:  #d87c49;
+
 `;
 
 export const Wrapper = styled.span`

@@ -6,6 +6,7 @@ import Products from "./pages/Products";
 import CategoriesD from './pages/Categories'
 import { BrowserRouter as Router,Routes as Switch, Route } from "react-router-dom";
 import { categoriesHeadphoneData ,categoriesSpeakerData,categoriesEarphoneData} from "./data/CategoriesData";
+import Tes from "./pages/Tes";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/products/:prodtitle" element={<Products/>}/>
         <Route path="/speakers" element={<CategoriesD data={categoriesSpeakerData}/>} />
         <Route path="/earphones" element={<CategoriesD data={categoriesEarphoneData}/>} />
+        <Route path="/tes" element = {<Tes />}/>
       </Switch>
 
       {/* <Home /> */}
