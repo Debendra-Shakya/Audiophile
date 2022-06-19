@@ -9,6 +9,7 @@ import {
   Wrapper,
 } from "./RecommendationStyles";
 import { RecommendationData } from "../../../data/RecommendationData";
+import { Link } from "react-router-dom";
 const Recommendation = () => {
   return (
     <Section inverse="a" padding="70px 0 0 0">
@@ -21,7 +22,9 @@ const Recommendation = () => {
               <Image src={el.img} alt={el.title} />
 
               <Title>{el.title}</Title>
+            <Link to={`/products/${el.routes}`}>
               <CategoriesButton>SEE PRODUCT</CategoriesButton>
+              </Link>
             </FeatureColumn>
           ))}
         </Wrapper>

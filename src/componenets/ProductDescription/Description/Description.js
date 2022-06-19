@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Section, Container } from "../../../globalStyles";
 import {
   ButtonWrapper,
@@ -38,8 +38,9 @@ const Description = () => {
     <Section padding="50px 0 0 0" inverse="a">
       
         <ButtonWrapper>
-          {/* <Button>get started</Button> */}
+          <Link to='/'>
           <Button>Go Back</Button>
+          </Link>
         </ButtonWrapper>
     
 

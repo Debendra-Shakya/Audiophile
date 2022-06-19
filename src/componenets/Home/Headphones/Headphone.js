@@ -13,6 +13,7 @@ import {
 } from "./HeadphoneStyles";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const Headphone = () => {
   const desktopImage =
     process.env.PUBLIC_URL + "/assests/home/desktop/image-hero.jpg";
@@ -69,7 +70,9 @@ const Headphone = () => {
         </TextWrapper>
         <ButtonWrapper>
           {/* <Button>get started</Button> */}
+          <Link to='/products/XX99 MARK II HEADPHONES'>
           <HeadphoneButton>SEE PRODUCT</HeadphoneButton>
+          </Link>
         </ButtonWrapper>
       </Container>
     </HeadphoneSection>

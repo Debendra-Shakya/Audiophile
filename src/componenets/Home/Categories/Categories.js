@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { categoriesData } from "../../../data/CategoriesData";
 import { Container, Section } from "../../../globalStyles";
@@ -17,6 +18,8 @@ const Categories = () => {
 
 
 <Title>{el.title}</Title>
+        <Link to={`/${el.title.toLowerCase()}`}>
+        
         <CategoriesButton>SHOP  
            <span style={{color:"red"}}>
            {'  >'} 
@@ -25,6 +28,7 @@ const Categories = () => {
             
             
             </CategoriesButton>
+        </Link>
 
   </FeatureColumn>
 ))}
