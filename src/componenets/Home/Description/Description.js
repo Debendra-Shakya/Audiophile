@@ -23,7 +23,7 @@ const Description = () => {
 
         <ContentColumn>
           <ImgWrapper>
-            <Img src="./assests/image-best-gear.jpg" alt ="dd"/>
+            <Img src="/assests/image-best-gear.jpg" alt ="dd"/>
           </ImgWrapper>
         </ContentColumn>
        
