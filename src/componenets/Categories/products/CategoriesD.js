@@ -15,16 +15,15 @@ import {
   CartButton,
   Wrapper,
   FeatureColumn,
-} from "./HeadphonesStyles";
-import { categoriesHeadphoneData } from "../../../data/CategoriesHeadphonesData";
+} from "./CategoriesDStyles";
 
 
 
-const Description = () => {
+const Description = ({data}) => {
   return (
     <Section padding="50px 0 0 0" inverse="a">
         
-        {categoriesHeadphoneData.map((el, index) => (
+        {data.map((el, index) => (
           <ContentRow key={index} reverse={el.reverse}>
             <ContentColumn>
               <ImgWrapper>
