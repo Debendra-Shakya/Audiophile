@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Section } from "../../../globalStyles";
 import {
   ContentButton,
@@ -39,9 +40,12 @@ const ZX9t = () => {
             <Subtitle>
             Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
             </Subtitle>
+            <Link to='/products/ZX9 SPEAKER'>
             <ContentButton>
             SEE PRODUCT
             </ContentButton>
+            
+            </Link>
           </TextWrapper>
         </ContentColumn>
        

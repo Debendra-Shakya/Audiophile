@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Section } from "../../../globalStyles";
 import {
   ContentRow,
@@ -20,8 +21,9 @@ const Zx7 = () => {
          
           <Zx7Image src="./assests/image-speaker-zx7.jpg" />
             <Zx7Heading>ZX7 SPEAKER</Zx7Heading>
-   
+            <Link to='/products/ZX7 SPEAKER'>
             <Zx7Button>SEE PRODUCT</Zx7Button>
+            </Link>
         </Zx7Wrapper>
     </Section>
   );

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Section } from '../../../globalStyles'
 import { ContentButton, Heading, TextWrapper, Wrapper, Yx1Image } from './Yx1Styles'
 
@@ -11,9 +12,11 @@ const Yx1 = () => {
             <Heading>
            YX1 EARPHONES
             </Heading>
+            <Link to='/products/YX1 WIRELESS EARPHONES'>
             <ContentButton>
             SEE PRODUCT
             </ContentButton>
+            </Link>
           </TextWrapper>
         </Wrapper>
     </Section>
