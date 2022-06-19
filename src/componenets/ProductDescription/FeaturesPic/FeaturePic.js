@@ -11,14 +11,14 @@ const FeaturePic = () => {
            <ContentColumn>
               
                <ContentRow>
-                  <Image src='./assests/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg' />
+                  <Image src='/assests/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg' />
                </ContentRow>
                <ContentRow>
-               <Image src='./assests/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg' />
+               <Image src='/assests/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg' />
                </ContentRow>
            </ContentColumn>
            <ContentColumn>
-           <Image src='./assests/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg' />
+           <Image src='/assests/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg' />
                </ContentColumn>
 
         </ContentRow>
