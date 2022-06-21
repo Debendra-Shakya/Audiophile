@@ -135,7 +135,7 @@ export const NavBtnLink = styled(Link)`
   border: none;
   outline: none;
 `;
-export const NavCart = styled.div`
+export const NavCart = styled(Link)`
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -160,3 +160,7 @@ export const NavbarWrapperCategories = styled.div`
   background-color: black;
 `;
 export const NavIcon = styled.div``;
+
+export const Menu=styled.menu ``
+
+export const Table=styled.table``
