@@ -19,21 +19,39 @@ import {
 } from "./DescriptionStyles";
 
 import {ProductDetails} from '../../../data/ProductsData'
+
+import { useDispatch } from "react-redux";
+import { addItemstoCart, AddToCart } from "../../../store/cartSlice";
+
 const Description = () => {
   const {prodtitle}=useParams();
-  console.log(prodtitle)
 
   const element = ProductDetails.find((el)=>el.title===prodtitle)
-  console.log(element)
-//   const [product,setProduct]=useState([]);
-//   useEffect(()=>{
-// const detail=ProdData.map((pdata)=>{
-//   if(pdata.title==title){
+  const dispatch = useDispatch();
+  const [quantity,setQuantity]=useState(1);
+  const AddToCartHandler=(product)=>{
 
-//   }
+    dispatch(addItemstoCart(product,quantity))
+    // console.log(product);
+    // console.log(quantity)
+
+  }
+
   
-// })
-//   })
+  const increaseQuantity = () => {
+
+    const qty = quantity + 1;
+    setQuantity(qty);
+  };
+
+  const decreaseQuantity = () => {
+    if (1 >= quantity) return;
+
+    const qty = quantity - 1;
+    setQuantity(qty);
+  };
+
+
   return (
     <Section padding="50px 0 0 0" inverse="a">
       
@@ -63,15 +81,15 @@ const Description = () => {
               <Wrapper>
                 <FeatureColumn>
                 <OneWrapper>
-                    <Button>-</Button>
-                    <Text>1</Text>
-                    <Button>+</Button>
+                    <Button onClick={decreaseQuantity}>-</Button>
+                    <Text>{quantity}</Text>
+                    <Button onClick={increaseQuantity}>+</Button>
                   </OneWrapper>
                 
                 </FeatureColumn>
                 <FeatureColumn>
 
-                <CartButton>Add to cart</CartButton>
+                <CartButton onClick={()=>AddToCartHandler(element)}>Add to cart</CartButton>
                 </FeatureColumn>
               </Wrapper>
             </ContentColumn>

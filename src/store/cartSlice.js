@@ -1,54 +1,78 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import { useDispatch } from "react-redux";
 const initialState = {
-  carts: [],
+  cartItems: [],
+  amount: 0, //quantity
+  total: 0,
 };
 
-export const cartReducer = createSlice({
+export const addItemstoCart = (el, quantity) => async (dispatch) => {
+  // dispatch(AddToCart(el,quantity))
+  dispatch(
+    AddToCart({
+      payload: {
+        cartItems: el,
+        quantity,
+      },
+    })
+  );
+};
+
+const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    AddCart: (state, action) => {
-      const IteamIndex = state.carts.findIndex(
-        (iteam) => iteam.id === action.payload.id
-      );
-      if (IteamIndex >= 0) {
-        state.carts[IteamIndex].qnty += 1;
-        return {
-          carts: [...state.carts],
-        };
-      } else {
-        const temp = { ...action.payload, qnty: 1 };
-        return {
-          carts: [...state.carts, temp],
-        };
-      }
-    },
-    RmvCart: (state, action) => {
-      const data = state.carts.filter((el) => el.id !== action.payload);
-      return {
-        carts: data,
-      };
-    },
-    RmvOne: (state, action) => {
-      const IteamIndex_dec = state.carts.findIndex(
-        (iteam) => iteam.id === action.payload.id
-      );
+    // AddToCart: (state, action) => {
+    //  const itemIndex= state.cartItems.findIndex((item)=> item.id ===action.payload.id)
+    //  if(itemIndex >= 0){
+    //   state.cartItems[itemIndex].cartQuantity += 1
+    //  }else{
 
-      if (state.carts[IteamIndex_dec].qnty >= 1) {
-        const dltiteams = (state.carts[IteamIndex_dec].qnty -= 1);
-        return {
-          carts: [...state.carts],
-        };
-      } else if (state.carts[IteamIndex_dec].qnty === 1) {
-        const data = state.carts.filter((el) => el.id !== action.payload);
-        return {
-          carts: data,
-        };
-      }
+    //    const tempProduct={...action.payload,cartQuantity:1}
+    //    state.cartItems.push(tempProduct)
+    //  }
+    // },
+    AddToCart: (state, action) => {
+      const items = action.payload;
+      const item=items.payload;
+      console.log(item);
+      state.cartItems.push(item.cartItems);
+      state.amount=item.quantity
+
+
+    //   const itemIndex= state.cartItems.findIndex((i)=> i.id ===item.cartItems.id)
+    //  const isItemExist = state.cartItems.find((i) => i.id === items.payload.cartItems.id);
+
+    //   console.log(itemIndex)
+    //   console.log(isItemExist)
+    //  if(itemIndex >= 0){
+    //   state.amount += item.quantity
+    //  }else{
+
+    //  }
+
+    //    const tempProduct={...action.payload,cartQuantity:1}
+    //    state.cartItems.push(tempProduct)
+  
+      // const isItemExist = state.cartItems.find((i) => i.id === items.payload.cartItems.id);
+      // console.log(isItemExist)
+      // if(isItemExist){
+      //   return{
+      //     cartItems: state.cartItems.map((i) =>
+      //       i.id === isItemExist.id ? item : i
+      //     ),
+      //   }
+      // }else{
+      //   return{
+      //     cartItems:[...state.cartItems,item]
+      //   }
+      // }
+
+      //  const tempProduct={...action.payload,cartQuantity:1}
+      //  state.cartItems.push(tempProduct)
     },
   },
 });
 
-export const {AddCart,RmvCart,RmvOne} =cartReducer.actions;
-export default cartReducer.reducer;
+export const { AddToCart, RmvCart, RmvOne } = cartSlice.actions;
+export default cartSlice.reducer;
