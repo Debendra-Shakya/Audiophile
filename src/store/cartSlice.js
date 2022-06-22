@@ -38,6 +38,12 @@ const cartSlice = createSlice({
       console.log(item);
       state.cartItems.push(item.cartItems);
       state.amount=item.quantity
+     const isItemExist = state.cartItems.find((i) => i.id === items.payload.cartItems.id);
+      console.log(isItemExist)
+           const itemIndex= state.cartItems.findIndex((item)=> item.id ===action.payload.id)
+      console.log(itemIndex)
+
+
 
 
     //   const itemIndex= state.cartItems.findIndex((i)=> i.id ===item.cartItems.id)

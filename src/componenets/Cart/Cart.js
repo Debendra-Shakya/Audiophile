@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+import Navbar from '../Navbar/Navbar'
 import CartsDetails from './CartsDetails'
 
 
@@ -12,12 +13,15 @@ const total =useSelector((store)=>store.cart.total)
 
 if(amount <1){
       return(
+        <>
         <div>cart is empty</div>
+        </>
       )
 }
 
   return (
 <>
+<Navbar/>
     <div>Cart</div>
     <div>
       {cartItems.map((item)=>{

@@ -7,7 +7,7 @@ import CategoriesD from './pages/Categories'
 import { BrowserRouter as Router,Routes as Switch, Route } from "react-router-dom";
 import { categoriesHeadphoneData ,categoriesSpeakerData,categoriesEarphoneData} from "./data/CategoriesData";
 import Tes from "./pages/Tes";
-import Cart from "./componenets/Cart/Cart";
+import Cart from "./pages/Cart";
 import { Provider } from "react-redux";
 import store from './store/store'
 import CartsDetails from "./componenets/Cart/CartsDetails";
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/speakers" element={<CategoriesD data={categoriesSpeakerData}/>} />
         <Route path="/earphones" element={<CategoriesD data={categoriesEarphoneData}/>} />
         <Route path="/cart" element = {<Cart/>}/>
-        <Route path='/cart/:id' element={<CartsDetails />} />
+        {/* <Route path='/cart/:id' element={<CartsDetails />} /> */}
       </Switch>
 
       {/* <Home /> */}
