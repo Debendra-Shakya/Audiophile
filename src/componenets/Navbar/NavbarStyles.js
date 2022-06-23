@@ -35,12 +35,11 @@ export const NavLogo = styled(Link)`
   z-index: 50;
   @media screen and (max-width: 960px) {
     display: flex;
-  align-items: center;
+    align-items: center;
     transform: translate(90%, 0%);
     font-size: 1.8rem;
     cursor: pointer;
   }
-
 `;
 // export const NavIcon = styled.nav``
 export const MobileIcon = styled.div`
@@ -135,7 +134,7 @@ export const NavBtnLink = styled(Link)`
   border: none;
   outline: none;
 `;
-export const NavCart = styled.div`
+export const NavCart = styled(Link)`
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -160,3 +159,26 @@ export const NavbarWrapperCategories = styled.div`
   background-color: black;
 `;
 export const NavIcon = styled.div``;
+
+export const Menu = styled.menu``;
+
+export const Table = styled.table``;
+
+export const AmountContainer = styled.div`
+  position: relative;
+  top: -0.6rem;
+  right: 0.2rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  /* background: var(--clr-primary-light); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const TotalAmount = styled.p`
+  color: white;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+`
