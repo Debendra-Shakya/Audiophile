@@ -95,7 +95,7 @@ const Navbar = () => {
 
 
 
-  const amount=useSelector((store)=>store.cart.amount)
+  const count=useSelector((store)=>store.cart.count)
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
@@ -122,7 +122,7 @@ const Navbar = () => {
           <NavCart to="/cart">
             <FaCartPlus />
             <AmountContainer>
-              <TotalAmount>{amount}</TotalAmount>
+              <TotalAmount>{count}</TotalAmount>
             </AmountContainer>
           </NavCart>
         </NavbarContainer>

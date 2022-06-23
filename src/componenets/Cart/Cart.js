@@ -7,11 +7,11 @@ import CartsDetails from './CartsDetails'
 const Cart = () => {
 const [price,setPrice]=useState()
 const cartItems= useSelector((store)=>store.cart.cartItems)
-const amount =useSelector((store)=>store.cart.amount)
+const count =useSelector((store)=>store.cart.count)
 const total =useSelector((store)=>store.cart.total)
 
 
-if(amount <1){
+if(count <1){
       return(
         <>
         <div>cart is empty</div>

@@ -2,7 +2,7 @@ import { createSlice, current } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 const initialState = {
   cartItems: [],
-  amount: 0, //quantity
+  count: 0, //quantity
   total: 0,
 };
 
@@ -36,10 +36,11 @@ const cartSlice = createSlice({
      }else{
 
        const tempProduct={...action.payload.cartItems,cartQuantity:action.payload.quantity}
-      //  state.cartItems.push(tempProduct)
-      console.log(tempProduct)
-       state.cartItems= [...state.cartItems, tempProduct]
+       console.log(tempProduct)
+       state.cartItems.push(tempProduct)
+      //  state.cartItems= [...state.cartItems, tempProduct]
        console.log(current (state))
+       state.count=state.cartItems.length
      }
     },
     // AddToCart: (state, action) => {
