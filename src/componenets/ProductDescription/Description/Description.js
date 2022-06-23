@@ -39,7 +39,7 @@ const Description = () => {
 
   
   const increaseQuantity = () => {
-
+    
     const qty = quantity + 1;
     setQuantity(qty);
   };

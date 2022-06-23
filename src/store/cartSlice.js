@@ -34,49 +34,30 @@ const cartSlice = createSlice({
     // },
     AddToCart: (state, action) => {
       const items = action.payload;
-      const item=items.payload;
+      const item = items.payload;
       console.log(item);
-      state.cartItems.push(item.cartItems);
-      state.amount=item.quantity
-     const isItemExist = state.cartItems.find((i) => i.id === items.payload.cartItems.id);
-      console.log(isItemExist)
-           const itemIndex= state.cartItems.findIndex((item)=> item.id ===action.payload.id)
-      console.log(itemIndex)
+      const isItemExist = state.cartItems.map(
+        (item) => item.id === item.cartItems.id
+      );
+    
+      
 
-
-
-
-    //   const itemIndex= state.cartItems.findIndex((i)=> i.id ===item.cartItems.id)
-    //  const isItemExist = state.cartItems.find((i) => i.id === items.payload.cartItems.id);
-
-    //   console.log(itemIndex)
-    //   console.log(isItemExist)
-    //  if(itemIndex >= 0){
-    //   state.amount += item.quantity
-    //  }else{
-
-    //  }
-
-    //    const tempProduct={...action.payload,cartQuantity:1}
-    //    state.cartItems.push(tempProduct)
-  
-      // const isItemExist = state.cartItems.find((i) => i.id === items.payload.cartItems.id);
-      // console.log(isItemExist)
-      // if(isItemExist){
-      //   return{
-      //     cartItems: state.cartItems.map((i) =>
-      //       i.id === isItemExist.id ? item : i
-      //     ),
-      //   }
-      // }else{
-      //   return{
-      //     cartItems:[...state.cartItems,item]
-      //   }
-      // }
-
-      //  const tempProduct={...action.payload,cartQuantity:1}
-      //  state.cartItems.push(tempProduct)
+      if (!isItemExist) {
+        state.cartItems = [
+          ...state.cartItems,
+          { ...item.cartItems, quantity: item.quantity },
+        ];
+      } else {
+        state.cartItems = state.cartItems.map((i) => {
+          if (i.id === item.cartItems.id) {
+            return { ...i, quantity: item.quantity + state.cartItems.quantity };
+          } else {
+            return i;
+          }
+        });
+      }
     },
+ 
   },
 });
 
