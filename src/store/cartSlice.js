@@ -43,31 +43,11 @@ const cartSlice = createSlice({
        state.count=state.cartItems.length
      }
     },
-    // AddToCart: (state, action) => {
-    //   const items = action.payload;
-    //   const item = items.payload;
-    //   console.log(item);
-    //   const isItemExist = state.cartItems.map(
-    //     (item) => item.id === item.cartItems.id
-    //   );
-    
-      
-
-    //   if (!isItemExist) {
-    //     state.cartItems = [
-    //       ...state.cartItems,
-    //       { ...item.cartItems, quantity: item.quantity },
-    //     ];
-    //   } else {
-    //     state.cartItems = state.cartItems.map((i) => {
-    //       if (i.id === item.cartItems.id) {
-    //         return { ...i, quantity: item.quantity + state.cartItems.quantity };
-    //       } else {
-    //         return i;
-    //       }
-    //     });
-    //   }
-    // },
+    RmvCart:(state,action)=>{
+      console.log(action.payload)
+     state.cartItems=state.cartItems.filter((item)=>item.id !== action.payload)
+    }
+ 
  
   },
 });
