@@ -19,4 +19,8 @@ export const data = [
 		to: '/earphones',
 		text: 'EARPHONES',
 	},
+	{
+		to: '/login',
+		text: 'Login',
+	},
 ];
