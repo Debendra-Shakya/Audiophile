@@ -21,55 +21,49 @@ import {
   Amount,
   AmountContainer,
   TotalAmount,
+  LoginButton,
 } from "./NavbarStyles.js";
 import { data } from "../../data/NavbarData";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RmvCart } from "../../store/cartSlice.js";
 
 const Navbar = () => {
-  const dispatch =useDispatch();
+  const dispatch = useDispatch();
   const [show, setShow] = useState(false);
   // const [anchorEl, setAnchorEl] = useState(null);
   // const [price,setPrice] = useState(0);
 
+  //   const open = Boolean(anchorEl);
+  //   const getdata = useSelector((state)=> state.cart.carts);
 
-//   const open = Boolean(anchorEl);
-//   const getdata = useSelector((state)=> state.cart.carts);
+  //   const cartHandleClick = (event) => {
+  //     setAnchorEl(event.currentTarget);
+  //   };
+  //   const cartHandleClose=()=>{
+  //     setAnchorEl(null)
+  //   }
 
-//   const cartHandleClick = (event) => {
-//     setAnchorEl(event.currentTarget);
-//   };
-//   const cartHandleClose=()=>{
-//     setAnchorEl(null)
-//   }
+  //   const dlt = (id)=>{
+  //     dispatch(RmvCart(id))
+  // }
 
-//   const dlt = (id)=>{
-//     dispatch(RmvCart(id))
-// }
+  // const total=()=>{
+  //   let price =0;
+  //   getdata.map((ele,k)=>{
+  //     price=ele.price * ele.qnty + price
+  //   })
+  //   setPrice(price);
 
-// const total=()=>{
-//   let price =0;
-//   getdata.map((ele,k)=>{
-//     price=ele.price * ele.qnty + price
-//   })
-//   setPrice(price);
-
-// }
-// useEffect(()=>{
-//   total();
-// },[total])
-
-
-
-
+  // }
+  // useEffect(()=>{
+  //   total();
+  // },[total])
 
   // let history = useHistory();
   let location = useLocation();
   let navigate = useNavigate();
-
-
 
   const handleClick = () => {
     setShow(!show);
@@ -91,11 +85,16 @@ const Navbar = () => {
     navigate(to);
     setShow(false);
   };
+  const LogoutButton=()=>{
+    localStorage.clear();
+    navigate('/')
+  }
+  const LoginButtons=()=>{
+    navigate('/login')
+  }
+ 
 
-
-
-
-  const count=useSelector((store)=>store.cart.count)
+  const count = useSelector((store) => store.cart.count);
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
@@ -118,7 +117,7 @@ const Navbar = () => {
               </NavItem>
             ))}
           </NavMenu>
-
+         {localStorage.getItem("email")? <LoginButton onClick={()=> LogoutButton()}>Logout</LoginButton>:<LoginButton onClick={()=>LoginButtons()}>Login</LoginButton>} 
           <NavCart to="/cart">
             <FaCartPlus />
             <AmountContainer>

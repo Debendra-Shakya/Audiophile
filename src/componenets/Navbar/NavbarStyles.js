@@ -182,3 +182,7 @@ export const TotalAmount = styled.p`
   margin-bottom: 0;
   font-size: 1.25rem;
 `
+
+export const LoginButton= styled.div`
+color:white;
+`
